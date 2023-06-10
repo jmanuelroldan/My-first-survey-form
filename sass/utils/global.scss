@@ -1,0 +1,17 @@
+@font-face {
+    font-family: Lato;
+    src: url(https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap);
+}
+
+$colorPrimary: hsl(0, 0%, 100%);
+$colorSecondary: #000000;
+$bpMedium:756px;
+$bpMediumMax: 1023px;
+$bpBig:1024px;
+
+@mixin flex ($disp, $dir, $cut, $just, $align){
+    display: $disp;
+    flex-flow: $dir, $cut;
+    justify-content: $just;
+    align-items: $align;
+}

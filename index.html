@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="./css/main.css">
+    </head>
+      <body>
+            <header class="header">
+              <h1 id="title" class="header__title">This is a survey form</h1>
+              <p id="description" class="header__title-description">Complete the form and press "Submit"<br>
+                 we will contact you as soon as possible.</p>
+          </header>
+         <div class="main">
+            <form id="survey-form" class="survey-form" action="#">
+                  <div class="survey-form__section-1">
+                        <label id="name-label" for="name">Name</label>
+                     <input type="text" name="name" id="name" 
+                     class="survey-form__control" placeholder="Enter your Name" required/>
+                     <label id="email-label" for="email">Email</label>
+                      <input type="email" name="email" id="email" 
+                      class="survey-form__control" placeholder="Enter your Email" required/> 
+                      <label id="number-label" for="number"> Age <span class="clue">(optional)</span></label>
+                      <input type="number" name="age" id="number" min="18" max="110" 
+                     class="survey-form__control" placeholder="Enter your age" required/>
+                    <label for="dropdown">Indicate your marital status:</label>
+                    <select id="dropdown" name="role" class="survey-form__control" required>
+                       <option disabled selected value> Select here</option>
+                       <option value="Married">Married</option>
+                       <option value="Single">Single</option>
+                       <option value="Divorced">Divorced</option>
+                       <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="survey-form__section-2">
+                    <div class="survey-form__check">
+                        <fieldset>                 
+                            <legend>Education Level</legend>  
+                            <div class="survey-form__check-items">  
+                                <input name="input-radio" type="radio" value="Yes" id="yes" checked class="input-radio"/>
+                                <label for="yes">Primary School</label><br>
+                                <input name="input-radio" value="No" id="no" type="radio" class="input-radio"/>
+                                <label for="no">Secondary School</label><br>
+                                <input name="input-radio" value="maybe" type="radio" id="maybe" class="input-radio"/>
+                                <label for="maybe">Postgraduate</label>
+                            </div>
+                        </fieldset>   
+                    </div>
+                    <div class="survey-form__check">             
+                        <p>Languages Spoken</p>
+                        <div class="survey-form__check-items">
+                            <input type="checkbox" name="1" id="uno" value="1"/>
+                            <label for="uno">English</label><br>
+                            <input  type="checkbox" name="2" id="dos" value="2"/>
+                            <label for="dos">Spanish</label><br>
+                            <input  type="checkbox" name="3" id="tres" value="3"/>
+                            <label for="tres">Other</label><br>
+                        </div>
+                    </div>
+                </div>
+                <div class="survey-form__section-3">
+                    <label for="comments">Any suggestions?</label>
+                    <textarea id="comments" class="survey-form__control"  name="comments" rows="5" columns="50" placeholder="Enter your comment here..."></textarea>
+                    <div class="button">
+                        <button type="submit" id="submit">Submit</button>
+                      </div> 
+                </div>
+                </div>
+            
+                           
+        </div>
+ </body>
+    
+</html>
